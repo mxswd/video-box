@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CorePython",
+        "repositoryURL": "https://github.com/mxswd/CorePython.git",
+        "state": {
+          "branch": "master",
+          "revision": "b698d29b32675c77aac5d786e21a8329545abd49",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

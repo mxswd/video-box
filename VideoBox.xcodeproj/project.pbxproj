@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF154D2B267F6AB500121B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF154D2A267F6AB500121B17 /* AppDelegate.m */; };
+		CF154D2E267F6AB500121B17 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF154D2D267F6AB500121B17 /* SceneDelegate.m */; };
+		CF154D31267F6AB500121B17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF154D30267F6AB500121B17 /* ViewController.m */; };
+		CF154D34267F6AB500121B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF154D32267F6AB500121B17 /* Main.storyboard */; };
+		CF154D36267F6AB600121B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF154D35267F6AB600121B17 /* Assets.xcassets */; };
+		CF154D39267F6AB600121B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF154D37267F6AB600121B17 /* LaunchScreen.storyboard */; };
+		CF154D3C267F6AB600121B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF154D3B267F6AB600121B17 /* main.m */; };
+		CF155425267FF9EE00121B17 /* lib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF155424267FF9EC00121B17 /* lib */; };
+		CF15542826800B0B00121B17 /* VideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CF15542726800B0B00121B17 /* VideoCache.m */; };
+		CF15544B268024D800121B17 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF155449268024D800121B17 /* Model.xcdatamodeld */; };
+		CF155476268029C200121B17 /* DownloadVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF155475268029C200121B17 /* DownloadVCViewController.m */; };
+		CF2676F526B3D32100DB9288 /* CorePython in Frameworks */ = {isa = PBXBuildFile; productRef = CF2676F426B3D32100DB9288 /* CorePython */; };
+		CF3BEC85270866C300A90120 /* SafariWebExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3BEC84270866C300A90120 /* SafariWebExtensionHandler.m */; };
+		CF3BEC88270866C300A90120 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = CF3BEC87270866C300A90120 /* _locales */; };
+		CF3BEC8A270866C300A90120 /* images in Resources */ = {isa = PBXBuildFile; fileRef = CF3BEC89270866C300A90120 /* images */; };
+		CF3BEC8C270866C300A90120 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CF3BEC8B270866C300A90120 /* manifest.json */; };
+		CF3BEC8E270866C300A90120 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CF3BEC8D270866C300A90120 /* background.js */; };
+		CF3BEC9A270866C300A90120 /* SafariVideoBox.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF3BEC81270866C300A90120 /* SafariVideoBox.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CFF6F745268179CD004380F4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF6F744268179CD004380F4 /* AVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF3BEC98270866C300A90120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF154D1E267F6AB500121B17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3BEC80270866C300A90120;
+			remoteInfo = SafariVideoBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF154D46267F6ACE00121B17 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF155170267FF9B200121B17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = PythonHome;
+			dstSubfolderSpec = 7;
+			files = (
+				CF155425267FF9EE00121B17 /* lib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5BB10927047E4A0061C225 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF3BEC9A270866C300A90120 /* SafariVideoBox.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF154D26267F6AB500121B17 /* VideoBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF154D29267F6AB500121B17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF154D2A267F6AB500121B17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF154D2C267F6AB500121B17 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CF154D2D267F6AB500121B17 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CF154D2F267F6AB500121B17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF154D30267F6AB500121B17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF154D33267F6AB500121B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF154D35267F6AB600121B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF154D38267F6AB600121B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF154D3A267F6AB600121B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF154D3B267F6AB600121B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF154E10267F6D9C00121B17 /* classobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classobject.h; sourceTree = "<group>"; };
+		CF154E11267F6D9C00121B17 /* cellobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellobject.h; sourceTree = "<group>"; };
+		CF154E12267F6D9C00121B17 /* intrcheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intrcheck.h; sourceTree = "<group>"; };
+		CF154E13267F6D9C00121B17 /* pyarena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyarena.h; sourceTree = "<group>"; };
+		CF154E14267F6D9C00121B17 /* sliceobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sliceobject.h; sourceTree = "<group>"; };
+		CF154E15267F6D9C00121B17 /* bltinmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bltinmodule.h; sourceTree = "<group>"; };
+		CF154E16267F6D9C00121B17 /* tupleobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tupleobject.h; sourceTree = "<group>"; };
+		CF154E17267F6D9C00121B17 /* bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitset.h; sourceTree = "<group>"; };
+		CF154E18267F6D9C00121B17 /* marshal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marshal.h; sourceTree = "<group>"; };
+		CF154E19267F6D9C00121B17 /* py_curses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = py_curses.h; sourceTree = "<group>"; };
+		CF154E1A267F6D9C00121B17 /* errcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errcode.h; sourceTree = "<group>"; };
+		CF154E1B267F6D9C00121B17 /* iterobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterobject.h; sourceTree = "<group>"; };
+		CF154E1C267F6D9C00121B17 /* asdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asdl.h; sourceTree = "<group>"; };
+		CF154E1D267F6D9C00121B17 /* rangeobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rangeobject.h; sourceTree = "<group>"; };
+		CF154E1E267F6D9C00121B17 /* pystrtod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystrtod.h; sourceTree = "<group>"; };
+		CF154E1F267F6D9C00121B17 /* warnings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warnings.h; sourceTree = "<group>"; };
+		CF154E20267F6D9C00121B17 /* pyhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyhash.h; sourceTree = "<group>"; };
+		CF154E21267F6D9C00121B17 /* pycapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pycapsule.h; sourceTree = "<group>"; };
+		CF154E22267F6D9C00121B17 /* pyerrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyerrors.h; sourceTree = "<group>"; };
+		CF154E23267F6D9C00121B17 /* fileutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileutils.h; sourceTree = "<group>"; };
+		CF154E24267F6D9C00121B17 /* parsetok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parsetok.h; sourceTree = "<group>"; };
+		CF154E25267F6D9C00121B17 /* dictobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictobject.h; sourceTree = "<group>"; };
+		CF154E26267F6D9C00121B17 /* CorePython.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePython.h; sourceTree = "<group>"; };
+		CF154E27267F6D9C00121B17 /* ceval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceval.h; sourceTree = "<group>"; };
+		CF154E28267F6D9C00121B17 /* pystate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystate.h; sourceTree = "<group>"; };
+		CF154E29267F6D9C00121B17 /* floatobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floatobject.h; sourceTree = "<group>"; };
+		CF154E2A267F6D9C00121B17 /* namespaceobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = namespaceobject.h; sourceTree = "<group>"; };
+		CF154E2B267F6D9C00121B17 /* exports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exports.h; sourceTree = "<group>"; };
+		CF154E2C267F6D9C00121B17 /* longintrepr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longintrepr.h; sourceTree = "<group>"; };
+		CF154E2D267F6D9C00121B17 /* structmember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structmember.h; sourceTree = "<group>"; };
+		CF154E2E267F6D9C00121B17 /* code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = code.h; sourceTree = "<group>"; };
+		CF154E2F267F6D9C00121B17 /* pyctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyctype.h; sourceTree = "<group>"; };
+		CF154E30267F6D9C00121B17 /* patchlevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patchlevel.h; sourceTree = "<group>"; };
+		CF154E31267F6D9C00121B17 /* frameobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frameobject.h; sourceTree = "<group>"; };
+		CF154E32267F6D9C00121B17 /* abstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstract.h; sourceTree = "<group>"; };
+		CF154E33267F6D9C00121B17 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		CF154E34267F6D9C00121B17 /* modsupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modsupport.h; sourceTree = "<group>"; };
+		CF154E35267F6D9C00121B17 /* pylifecycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pylifecycle.h; sourceTree = "<group>"; };
+		CF154E36267F6D9C00121B17 /* datetime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datetime.h; sourceTree = "<group>"; };
+		CF154E37267F6D9C00121B17 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		CF154E38267F6D9C00121B17 /* methodobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = methodobject.h; sourceTree = "<group>"; };
+		CF154E39267F6D9C00121B17 /* genobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genobject.h; sourceTree = "<group>"; };
+		CF154E3A267F6D9C00121B17 /* pymem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymem.h; sourceTree = "<group>"; };
+		CF154E3B267F6D9C00121B17 /* boolobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boolobject.h; sourceTree = "<group>"; };
+		CF154E3C267F6D9C00121B17 /* interpreteridobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interpreteridobject.h; sourceTree = "<group>"; };
+		CF154E3D267F6D9C00121B17 /* fileobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileobject.h; sourceTree = "<group>"; };
+		CF154E3E267F6D9C00121B17 /* pyexpat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyexpat.h; sourceTree = "<group>"; };
+		CF154E3F267F6D9C00121B17 /* pystrcmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystrcmp.h; sourceTree = "<group>"; };
+		CF154E40267F6D9C00121B17 /* pymath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymath.h; sourceTree = "<group>"; };
+		CF154E41267F6D9C00121B17 /* weakrefobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weakrefobject.h; sourceTree = "<group>"; };
+		CF154E42267F6D9C00121B17 /* pymacconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymacconfig.h; sourceTree = "<group>"; };
+		CF154E43267F6D9C00121B17 /* pyfpe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyfpe.h; sourceTree = "<group>"; };
+		CF154E44267F6D9C00121B17 /* pymacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymacro.h; sourceTree = "<group>"; };
+		CF154E45267F6D9C00121B17 /* enumobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enumobject.h; sourceTree = "<group>"; };
+		CF154E46267F6D9C00121B17 /* moduleobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = moduleobject.h; sourceTree = "<group>"; };
+		CF154E47267F6D9C00121B17 /* typeslots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeslots.h; sourceTree = "<group>"; };
+		CF154E48267F6D9C00121B17 /* symtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symtable.h; sourceTree = "<group>"; };
+		CF154E49267F6D9C00121B17 /* odictobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = odictobject.h; sourceTree = "<group>"; };
+		CF154E4A267F6D9C00121B17 /* ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ast.h; sourceTree = "<group>"; };
+		CF154E4B267F6D9C00121B17 /* compile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compile.h; sourceTree = "<group>"; };
+		CF154E4C267F6D9C00121B17 /* eval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eval.h; sourceTree = "<group>"; };
+		CF154E4D267F6D9C00121B17 /* tracemalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tracemalloc.h; sourceTree = "<group>"; };
+		CF154E4E267F6D9C00121B17 /* setobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setobject.h; sourceTree = "<group>"; };
+		CF154E4F267F6D9C00121B17 /* codecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codecs.h; sourceTree = "<group>"; };
+		CF154E50267F6D9C00121B17 /* grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grammar.h; sourceTree = "<group>"; };
+		CF154E51267F6D9C00121B17 /* complexobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = complexobject.h; sourceTree = "<group>"; };
+		CF154E52267F6D9C00121B17 /* pystrhex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystrhex.h; sourceTree = "<group>"; };
+		CF154E53267F6D9C00121B17 /* pyframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyframe.h; sourceTree = "<group>"; };
+		CF154E54267F6D9C00121B17 /* picklebufobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = picklebufobject.h; sourceTree = "<group>"; };
+		CF154E55267F6D9C00121B17 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		CF154E56267F6D9C00121B17 /* structseq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structseq.h; sourceTree = "<group>"; };
+		CF154E57267F6D9C00121B17 /* bytearrayobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytearrayobject.h; sourceTree = "<group>"; };
+		CF154E58267F6D9C00121B17 /* pytime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pytime.h; sourceTree = "<group>"; };
+		CF154E59267F6D9C00121B17 /* import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = import.h; sourceTree = "<group>"; };
+		CF154E5A267F6D9C00121B17 /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
+		CF154E5B267F6D9C00121B17 /* ucnhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucnhash.h; sourceTree = "<group>"; };
+		CF154E5C267F6D9C00121B17 /* osdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdefs.h; sourceTree = "<group>"; };
+		CF154E5D267F6D9C00121B17 /* pythonrun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pythonrun.h; sourceTree = "<group>"; };
+		CF154E5E267F6D9C00121B17 /* unicodeobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicodeobject.h; sourceTree = "<group>"; };
+		CF154E5F267F6D9C00121B17 /* Python-ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Python-ast.h"; sourceTree = "<group>"; };
+		CF154E60267F6D9C00121B17 /* traceback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = traceback.h; sourceTree = "<group>"; };
+		CF154E61267F6D9C00121B17 /* funcobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = funcobject.h; sourceTree = "<group>"; };
+		CF154E62267F6D9C00121B17 /* pythread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pythread.h; sourceTree = "<group>"; };
+		CF154E63267F6D9C00121B17 /* Python.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
+		CF154E64267F6D9C00121B17 /* memoryobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memoryobject.h; sourceTree = "<group>"; };
+		CF154E65267F6D9C00121B17 /* opcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode.h; sourceTree = "<group>"; };
+		CF154E66267F6D9C00121B17 /* descrobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descrobject.h; sourceTree = "<group>"; };
+		CF154E67267F6D9C00121B17 /* objimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objimpl.h; sourceTree = "<group>"; };
+		CF154E68267F6D9C00121B17 /* pyport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyport.h; sourceTree = "<group>"; };
+		CF154E69267F6D9C00121B17 /* pydtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pydtrace.h; sourceTree = "<group>"; };
+		CF154E6A267F6D9C00121B17 /* sysmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysmodule.h; sourceTree = "<group>"; };
+		CF154E6B267F6D9C00121B17 /* longobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longobject.h; sourceTree = "<group>"; };
+		CF154E6C267F6D9C00121B17 /* osmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osmodule.h; sourceTree = "<group>"; };
+		CF154E6D267F6D9C00121B17 /* bytesobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytesobject.h; sourceTree = "<group>"; };
+		CF154E6E267F6D9C00121B17 /* listobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listobject.h; sourceTree = "<group>"; };
+		CF154E6F267F6D9C00121B17 /* graminit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graminit.h; sourceTree = "<group>"; };
+		CF154E70267F6D9C00121B17 /* pydebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pydebug.h; sourceTree = "<group>"; };
+		CF154E71267F6D9C00121B17 /* genericaliasobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericaliasobject.h; sourceTree = "<group>"; };
+		CF154E72267F6D9C00121B17 /* dynamic_annotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamic_annotations.h; sourceTree = "<group>"; };
+		CF154E73267F6E3600121B17 /* pyconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pyconfig.h; sourceTree = "<group>"; };
+		CF154EA5267F6EA400121B17 /* bytesobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bytesobject.h; sourceTree = "<group>"; };
+		CF154EA6267F6EA400121B17 /* methodobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = methodobject.h; sourceTree = "<group>"; };
+		CF154EA7267F6EA400121B17 /* pymem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pymem.h; sourceTree = "<group>"; };
+		CF154EA8267F6EA500121B17 /* pylifecycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pylifecycle.h; sourceTree = "<group>"; };
+		CF154EA9267F6EA500121B17 /* bytearrayobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bytearrayobject.h; sourceTree = "<group>"; };
+		CF154EAA267F6EA500121B17 /* pystate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pystate.h; sourceTree = "<group>"; };
+		CF154EAB267F6EA500121B17 /* traceback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = traceback.h; sourceTree = "<group>"; };
+		CF154EAC267F6EA600121B17 /* frameobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frameobject.h; sourceTree = "<group>"; };
+		CF154EAD267F6EA600121B17 /* import.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = import.h; sourceTree = "<group>"; };
+		CF154EAE267F6EA600121B17 /* objimpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objimpl.h; sourceTree = "<group>"; };
+		CF154EAF267F6EA600121B17 /* unicodeobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unicodeobject.h; sourceTree = "<group>"; };
+		CF154EB0267F6EA700121B17 /* sysmodule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sysmodule.h; sourceTree = "<group>"; };
+		CF154EB1267F6EA700121B17 /* tupleobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tupleobject.h; sourceTree = "<group>"; };
+		CF154EB2267F6EA700121B17 /* abstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = abstract.h; sourceTree = "<group>"; };
+		CF154EB3267F6EA700121B17 /* initconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = initconfig.h; sourceTree = "<group>"; };
+		CF154EB4267F6EA800121B17 /* dictobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictobject.h; sourceTree = "<group>"; };
+		CF154EB5267F6EA800121B17 /* fileobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fileobject.h; sourceTree = "<group>"; };
+		CF154EB6267F6EA800121B17 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		CF154EB7267F6EA800121B17 /* fileutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fileutils.h; sourceTree = "<group>"; };
+		CF154EB8267F6EA900121B17 /* listobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = listobject.h; sourceTree = "<group>"; };
+		CF154EB9267F6EA900121B17 /* interpreteridobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interpreteridobject.h; sourceTree = "<group>"; };
+		CF154EBA267F6EA900121B17 /* pyerrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pyerrors.h; sourceTree = "<group>"; };
+		CF154EBB267F6EA900121B17 /* code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = code.h; sourceTree = "<group>"; };
+		CF154EBC267F6EA900121B17 /* ceval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ceval.h; sourceTree = "<group>"; };
+		CF155424267FF9EC00121B17 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = VideoBox/lib; sourceTree = "<group>"; };
+		CF15542626800B0B00121B17 /* VideoCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCache.h; sourceTree = "<group>"; };
+		CF15542726800B0B00121B17 /* VideoCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCache.m; sourceTree = "<group>"; };
+		CF15544A268024D800121B17 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CF155474268029C200121B17 /* DownloadVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadVCViewController.h; sourceTree = "<group>"; };
+		CF155475268029C200121B17 /* DownloadVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadVCViewController.m; sourceTree = "<group>"; };
+		CF3BEC81270866C300A90120 /* SafariVideoBox.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariVideoBox.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3BEC83270866C300A90120 /* SafariWebExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariWebExtensionHandler.h; sourceTree = "<group>"; };
+		CF3BEC84270866C300A90120 /* SafariWebExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariWebExtensionHandler.m; sourceTree = "<group>"; };
+		CF3BEC87270866C300A90120 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		CF3BEC89270866C300A90120 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		CF3BEC8B270866C300A90120 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		CF3BEC8D270866C300A90120 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		CF3BEC97270866C300A90120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3BEC9B270866C300A90120 /* SafariVideoBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariVideoBox.entitlements; sourceTree = "<group>"; };
+		CF7D720F2682B8D800BA88D0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		CFF6F744268179CD004380F4 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		CFF6F74626817A6C004380F4 /* VideoBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoBox.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF154D23267F6AB500121B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF6F745268179CD004380F4 /* AVKit.framework in Frameworks */,
+				CF2676F526B3D32100DB9288 /* CorePython in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3BEC7E270866C300A90120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF154D1D267F6AB500121B17 = {
+			isa = PBXGroup;
+			children = (
+				CF155424267FF9EC00121B17 /* lib */,
+				CF154D28267F6AB500121B17 /* VideoBox */,
+				CF3BEC82270866C300A90120 /* SafariVideoBox */,
+				CF154D27267F6AB500121B17 /* Products */,
+				CFF6F743268179CD004380F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF154D27267F6AB500121B17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF154D26267F6AB500121B17 /* VideoBox.app */,
+				CF3BEC81270866C300A90120 /* SafariVideoBox.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF154D28267F6AB500121B17 /* VideoBox */ = {
+			isa = PBXGroup;
+			children = (
+				CFF6F74626817A6C004380F4 /* VideoBox.entitlements */,
+				CF154E0F267F6D9C00121B17 /* Headers */,
+				CF154D29267F6AB500121B17 /* AppDelegate.h */,
+				CF154D2A267F6AB500121B17 /* AppDelegate.m */,
+				CF15542626800B0B00121B17 /* VideoCache.h */,
+				CF15542726800B0B00121B17 /* VideoCache.m */,
+				CF154D2C267F6AB500121B17 /* SceneDelegate.h */,
+				CF154D2D267F6AB500121B17 /* SceneDelegate.m */,
+				CF154D2F267F6AB500121B17 /* ViewController.h */,
+				CF154D30267F6AB500121B17 /* ViewController.m */,
+				CF155474268029C200121B17 /* DownloadVCViewController.h */,
+				CF155475268029C200121B17 /* DownloadVCViewController.m */,
+				CF154D32267F6AB500121B17 /* Main.storyboard */,
+				CF154D35267F6AB600121B17 /* Assets.xcassets */,
+				CF154D37267F6AB600121B17 /* LaunchScreen.storyboard */,
+				CF154D3A267F6AB600121B17 /* Info.plist */,
+				CF154D3B267F6AB600121B17 /* main.m */,
+				CF155449268024D800121B17 /* Model.xcdatamodeld */,
+			);
+			path = VideoBox;
+			sourceTree = "<group>";
+		};
+		CF154E0F267F6D9C00121B17 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CF154E74267F6E5200121B17 /* cpython */,
+				CF154E10267F6D9C00121B17 /* classobject.h */,
+				CF154E73267F6E3600121B17 /* pyconfig.h */,
+				CF154E11267F6D9C00121B17 /* cellobject.h */,
+				CF154E12267F6D9C00121B17 /* intrcheck.h */,
+				CF154E13267F6D9C00121B17 /* pyarena.h */,
+				CF154E14267F6D9C00121B17 /* sliceobject.h */,
+				CF154E15267F6D9C00121B17 /* bltinmodule.h */,
+				CF154E16267F6D9C00121B17 /* tupleobject.h */,
+				CF154E17267F6D9C00121B17 /* bitset.h */,
+				CF154E18267F6D9C00121B17 /* marshal.h */,
+				CF154E19267F6D9C00121B17 /* py_curses.h */,
+				CF154E1A267F6D9C00121B17 /* errcode.h */,
+				CF154E1B267F6D9C00121B17 /* iterobject.h */,
+				CF154E1C267F6D9C00121B17 /* asdl.h */,
+				CF154E1D267F6D9C00121B17 /* rangeobject.h */,
+				CF154E1E267F6D9C00121B17 /* pystrtod.h */,
+				CF154E1F267F6D9C00121B17 /* warnings.h */,
+				CF154E20267F6D9C00121B17 /* pyhash.h */,
+				CF154E21267F6D9C00121B17 /* pycapsule.h */,
+				CF154E22267F6D9C00121B17 /* pyerrors.h */,
+				CF154E23267F6D9C00121B17 /* fileutils.h */,
+				CF154E24267F6D9C00121B17 /* parsetok.h */,
+				CF154E25267F6D9C00121B17 /* dictobject.h */,
+				CF154E26267F6D9C00121B17 /* CorePython.h */,
+				CF154E27267F6D9C00121B17 /* ceval.h */,
+				CF154E28267F6D9C00121B17 /* pystate.h */,
+				CF154E29267F6D9C00121B17 /* floatobject.h */,
+				CF154E2A267F6D9C00121B17 /* namespaceobject.h */,
+				CF154E2B267F6D9C00121B17 /* exports.h */,
+				CF154E2C267F6D9C00121B17 /* longintrepr.h */,
+				CF154E2D267F6D9C00121B17 /* structmember.h */,
+				CF154E2E267F6D9C00121B17 /* code.h */,
+				CF154E2F267F6D9C00121B17 /* pyctype.h */,
+				CF154E30267F6D9C00121B17 /* patchlevel.h */,
+				CF154E31267F6D9C00121B17 /* frameobject.h */,
+				CF154E32267F6D9C00121B17 /* abstract.h */,
+				CF154E33267F6D9C00121B17 /* context.h */,
+				CF154E34267F6D9C00121B17 /* modsupport.h */,
+				CF154E35267F6D9C00121B17 /* pylifecycle.h */,
+				CF154E36267F6D9C00121B17 /* datetime.h */,
+				CF154E37267F6D9C00121B17 /* node.h */,
+				CF154E38267F6D9C00121B17 /* methodobject.h */,
+				CF154E39267F6D9C00121B17 /* genobject.h */,
+				CF154E3A267F6D9C00121B17 /* pymem.h */,
+				CF154E3B267F6D9C00121B17 /* boolobject.h */,
+				CF154E3C267F6D9C00121B17 /* interpreteridobject.h */,
+				CF154E3D267F6D9C00121B17 /* fileobject.h */,
+				CF154E3E267F6D9C00121B17 /* pyexpat.h */,
+				CF154E3F267F6D9C00121B17 /* pystrcmp.h */,
+				CF154E40267F6D9C00121B17 /* pymath.h */,
+				CF154E41267F6D9C00121B17 /* weakrefobject.h */,
+				CF154E42267F6D9C00121B17 /* pymacconfig.h */,
+				CF154E43267F6D9C00121B17 /* pyfpe.h */,
+				CF154E44267F6D9C00121B17 /* pymacro.h */,
+				CF154E45267F6D9C00121B17 /* enumobject.h */,
+				CF154E46267F6D9C00121B17 /* moduleobject.h */,
+				CF154E47267F6D9C00121B17 /* typeslots.h */,
+				CF154E48267F6D9C00121B17 /* symtable.h */,
+				CF154E49267F6D9C00121B17 /* odictobject.h */,
+				CF154E4A267F6D9C00121B17 /* ast.h */,
+				CF154E4B267F6D9C00121B17 /* compile.h */,
+				CF154E4C267F6D9C00121B17 /* eval.h */,
+				CF154E4D267F6D9C00121B17 /* tracemalloc.h */,
+				CF154E4E267F6D9C00121B17 /* setobject.h */,
+				CF154E4F267F6D9C00121B17 /* codecs.h */,
+				CF154E50267F6D9C00121B17 /* grammar.h */,
+				CF154E51267F6D9C00121B17 /* complexobject.h */,
+				CF154E52267F6D9C00121B17 /* pystrhex.h */,
+				CF154E53267F6D9C00121B17 /* pyframe.h */,
+				CF154E54267F6D9C00121B17 /* picklebufobject.h */,
+				CF154E55267F6D9C00121B17 /* object.h */,
+				CF154E56267F6D9C00121B17 /* structseq.h */,
+				CF154E57267F6D9C00121B17 /* bytearrayobject.h */,
+				CF154E58267F6D9C00121B17 /* pytime.h */,
+				CF154E59267F6D9C00121B17 /* import.h */,
+				CF154E5A267F6D9C00121B17 /* token.h */,
+				CF154E5B267F6D9C00121B17 /* ucnhash.h */,
+				CF154E5C267F6D9C00121B17 /* osdefs.h */,
+				CF154E5D267F6D9C00121B17 /* pythonrun.h */,
+				CF154E5E267F6D9C00121B17 /* unicodeobject.h */,
+				CF154E5F267F6D9C00121B17 /* Python-ast.h */,
+				CF154E60267F6D9C00121B17 /* traceback.h */,
+				CF154E61267F6D9C00121B17 /* funcobject.h */,
+				CF154E62267F6D9C00121B17 /* pythread.h */,
+				CF154E63267F6D9C00121B17 /* Python.h */,
+				CF154E64267F6D9C00121B17 /* memoryobject.h */,
+				CF154E65267F6D9C00121B17 /* opcode.h */,
+				CF154E66267F6D9C00121B17 /* descrobject.h */,
+				CF154E67267F6D9C00121B17 /* objimpl.h */,
+				CF154E68267F6D9C00121B17 /* pyport.h */,
+				CF154E69267F6D9C00121B17 /* pydtrace.h */,
+				CF154E6A267F6D9C00121B17 /* sysmodule.h */,
+				CF154E6B267F6D9C00121B17 /* longobject.h */,
+				CF154E6C267F6D9C00121B17 /* osmodule.h */,
+				CF154E6D267F6D9C00121B17 /* bytesobject.h */,
+				CF154E6E267F6D9C00121B17 /* listobject.h */,
+				CF154E6F267F6D9C00121B17 /* graminit.h */,
+				CF154E70267F6D9C00121B17 /* pydebug.h */,
+				CF154E71267F6D9C00121B17 /* genericaliasobject.h */,
+				CF154E72267F6D9C00121B17 /* dynamic_annotations.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CF154E74267F6E5200121B17 /* cpython */ = {
+			isa = PBXGroup;
+			children = (
+				CF154EB2267F6EA700121B17 /* abstract.h */,
+				CF154EA9267F6EA500121B17 /* bytearrayobject.h */,
+				CF154EA5267F6EA400121B17 /* bytesobject.h */,
+				CF154EBC267F6EA900121B17 /* ceval.h */,
+				CF154EBB267F6EA900121B17 /* code.h */,
+				CF154EB4267F6EA800121B17 /* dictobject.h */,
+				CF154EB5267F6EA800121B17 /* fileobject.h */,
+				CF154EB7267F6EA800121B17 /* fileutils.h */,
+				CF154EAC267F6EA600121B17 /* frameobject.h */,
+				CF154EAD267F6EA600121B17 /* import.h */,
+				CF154EB3267F6EA700121B17 /* initconfig.h */,
+				CF154EB9267F6EA900121B17 /* interpreteridobject.h */,
+				CF154EB8267F6EA900121B17 /* listobject.h */,
+				CF154EA6267F6EA400121B17 /* methodobject.h */,
+				CF154EB6267F6EA800121B17 /* object.h */,
+				CF154EAE267F6EA600121B17 /* objimpl.h */,
+				CF154EBA267F6EA900121B17 /* pyerrors.h */,
+				CF154EA8267F6EA500121B17 /* pylifecycle.h */,
+				CF154EA7267F6EA400121B17 /* pymem.h */,
+				CF154EAA267F6EA500121B17 /* pystate.h */,
+				CF154EB0267F6EA700121B17 /* sysmodule.h */,
+				CF154EAB267F6EA500121B17 /* traceback.h */,
+				CF154EB1267F6EA700121B17 /* tupleobject.h */,
+				CF154EAF267F6EA600121B17 /* unicodeobject.h */,
+			);
+			path = cpython;
+			sourceTree = "<group>";
+		};
+		CF3BEC82270866C300A90120 /* SafariVideoBox */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BEC9B270866C300A90120 /* SafariVideoBox.entitlements */,
+				CF3BEC83270866C300A90120 /* SafariWebExtensionHandler.h */,
+				CF3BEC84270866C300A90120 /* SafariWebExtensionHandler.m */,
+				CF3BEC97270866C300A90120 /* Info.plist */,
+				CF3BEC86270866C300A90120 /* Resources */,
+			);
+			path = SafariVideoBox;
+			sourceTree = "<group>";
+		};
+		CF3BEC86270866C300A90120 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BEC87270866C300A90120 /* _locales */,
+				CF3BEC89270866C300A90120 /* images */,
+				CF3BEC8B270866C300A90120 /* manifest.json */,
+				CF3BEC8D270866C300A90120 /* background.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFF6F743268179CD004380F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF6F744268179CD004380F4 /* AVKit.framework */,
+				CF7D720F2682B8D800BA88D0 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF154D25267F6AB500121B17 /* VideoBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF154D3F267F6AB600121B17 /* Build configuration list for PBXNativeTarget "VideoBox" */;
+			buildPhases = (
+				CF154D22267F6AB500121B17 /* Sources */,
+				CF154D23267F6AB500121B17 /* Frameworks */,
+				CF154D24267F6AB500121B17 /* Resources */,
+				CF155170267FF9B200121B17 /* CopyFiles */,
+				CF154D46267F6ACE00121B17 /* Embed Frameworks */,
+				CF5BB10927047E4A0061C225 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3BEC99270866C300A90120 /* PBXTargetDependency */,
+			);
+			name = VideoBox;
+			packageProductDependencies = (
+				CF2676F426B3D32100DB9288 /* CorePython */,
+			);
+			productName = VideoBox;
+			productReference = CF154D26267F6AB500121B17 /* VideoBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF3BEC80270866C300A90120 /* SafariVideoBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3BEC9C270866C300A90120 /* Build configuration list for PBXNativeTarget "SafariVideoBox" */;
+			buildPhases = (
+				CF3BEC7D270866C300A90120 /* Sources */,
+				CF3BEC7E270866C300A90120 /* Frameworks */,
+				CF3BEC7F270866C300A90120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariVideoBox;
+			productName = SafariVideoBox;
+			productReference = CF3BEC81270866C300A90120 /* SafariVideoBox.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF154D1E267F6AB500121B17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CF154D25267F6AB500121B17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CF3BEC80270866C300A90120 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = CF154D21267F6AB500121B17 /* Build configuration list for PBXProject "VideoBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF154D1D267F6AB500121B17;
+			packageReferences = (
+				CF2676F326B3D32100DB9288 /* XCRemoteSwiftPackageReference "CorePython" */,
+			);
+			productRefGroup = CF154D27267F6AB500121B17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF154D25267F6AB500121B17 /* VideoBox */,
+				CF3BEC80270866C300A90120 /* SafariVideoBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF154D24267F6AB500121B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF154D39267F6AB600121B17 /* LaunchScreen.storyboard in Resources */,
+				CF154D36267F6AB600121B17 /* Assets.xcassets in Resources */,
+				CF154D34267F6AB500121B17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3BEC7F270866C300A90120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3BEC8E270866C300A90120 /* background.js in Resources */,
+				CF3BEC8A270866C300A90120 /* images in Resources */,
+				CF3BEC8C270866C300A90120 /* manifest.json in Resources */,
+				CF3BEC88270866C300A90120 /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF154D22267F6AB500121B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF154D31267F6AB500121B17 /* ViewController.m in Sources */,
+				CF154D2B267F6AB500121B17 /* AppDelegate.m in Sources */,
+				CF154D3C267F6AB600121B17 /* main.m in Sources */,
+				CF155476268029C200121B17 /* DownloadVCViewController.m in Sources */,
+				CF15542826800B0B00121B17 /* VideoCache.m in Sources */,
+				CF154D2E267F6AB500121B17 /* SceneDelegate.m in Sources */,
+				CF15544B268024D800121B17 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3BEC7D270866C300A90120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3BEC85270866C300A90120 /* SafariWebExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF3BEC99270866C300A90120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF3BEC80270866C300A90120 /* SafariVideoBox */;
+			targetProxy = CF3BEC98270866C300A90120 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF154D32267F6AB500121B17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF154D33267F6AB500121B17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF154D37267F6AB600121B17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF154D38267F6AB600121B17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF154D3D267F6AB600121B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF154D3E267F6AB600121B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF154D40267F6AB600121B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VideoBox/VideoBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Headers",
+					"$(PROJECT_DIR)/Headers/cpython",
+				);
+				INFOPLIST_FILE = VideoBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = town.max.VideoBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		CF154D41267F6AB600121B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VideoBox/VideoBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Headers",
+					"$(PROJECT_DIR)/Headers/cpython",
+				);
+				INFOPLIST_FILE = VideoBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = town.max.VideoBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		CF3BEC9D270866C300A90120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = SafariVideoBox/SafariVideoBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariVideoBox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariVideoBox;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = town.max.VideoBox.SafariVideoBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF3BEC9E270866C300A90120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = SafariVideoBox/SafariVideoBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariVideoBox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariVideoBox;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = town.max.VideoBox.SafariVideoBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF154D21267F6AB500121B17 /* Build configuration list for PBXProject "VideoBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF154D3D267F6AB600121B17 /* Debug */,
+				CF154D3E267F6AB600121B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF154D3F267F6AB600121B17 /* Build configuration list for PBXNativeTarget "VideoBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF154D40267F6AB600121B17 /* Debug */,
+				CF154D41267F6AB600121B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3BEC9C270866C300A90120 /* Build configuration list for PBXNativeTarget "SafariVideoBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3BEC9D270866C300A90120 /* Debug */,
+				CF3BEC9E270866C300A90120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF2676F326B3D32100DB9288 /* XCRemoteSwiftPackageReference "CorePython" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxswd/CorePython.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF2676F426B3D32100DB9288 /* CorePython */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF2676F326B3D32100DB9288 /* XCRemoteSwiftPackageReference "CorePython" */;
+			productName = CorePython;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CF155449268024D800121B17 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF15544A268024D800121B17 /* Model.xcdatamodel */,
+			);
+			currentVersion = CF15544A268024D800121B17 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF154D1E267F6AB500121B17 /* Project object */;
+}
